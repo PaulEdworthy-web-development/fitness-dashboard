@@ -10,13 +10,21 @@
 :root {
   --color-primary: #3246a9;
   --color-primary-dark: #202d6c;
-  --color-primary-light: #abb4dc;
+  --color-primary-light: #7c89c8;
   --color-white: #fff;
   --color-grey-dark: #333;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.icons {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  margin-right: 1rem;
+  vertical-align: middle;
+  width: 35px;
 }
 
 .sidenav {
@@ -31,7 +39,7 @@ body {
 
 .dashboard {
   color: #333;
-  margin-left: 400px;
+  margin-left: 200px;
 }
 
 .container {
@@ -45,13 +53,10 @@ body {
   padding: 2rem 0;
 }
 
-.nav__item {
-  margin: 2rem 0;
-}
-
 .nav__link {
   color: var(--color-white);
-  padding: 1rem 2rem;
+  display: block;
+  padding: 1rem;
   text-transform: uppercase;
 }
 
@@ -59,6 +64,10 @@ body {
 .current {
   background-color: var(--color-primary-light);
   transition: all .5s;
+}
+
+.nav__link:focus {
+  outline: 3px solid var(--color-white);
 }
 
 /* Mobility Page */
