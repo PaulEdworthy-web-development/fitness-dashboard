@@ -86,7 +86,7 @@ h3 {
 
 .card__item {
   background-color: var(--color-white);
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 0 5px 25px var(--color-primary-light);
   flex-basis: 45%;
   height: 44vh;
